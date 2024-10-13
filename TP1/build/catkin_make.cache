@@ -1,0 +1,2 @@
+homework_1
+-DCATKIN_DEVEL_PREFIX=/home/robot/homeworks/devel -DCMAKE_INSTALL_PREFIX=/home/robot/homeworks/install -G Unix Makefiles

@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="homework_1" type="node_B.py" name="node_B" />
+    <node pkg="homework_1" type="node_C.py" name="node_C" />
+    <node pkg="homework_1" type="node_D.py" name="node_D" />
+    <node pkg="homework_1" type="node_A.py" name="node_A" />
+</launch>
