@@ -1,0 +1,18 @@
+\documentclass[../CSC_5RO11_TA_TP6.tex]{subfiles}
+
+\begin{document}
+\section{Auscultate Examen}
+\noindent Given the Bayesian inference, Bronchitis is the most likely disease for this patient. The doctor may choose to auscultate the patient's lungs with a stethoscope because bronchitis can be detected through this test, and the patient is more likely to have it than any other disease. Therefore:
+\begin{enumerate}[noitemsep]
+    \item examen positive for \textbf{Bronchitis}: $P(\mathbf{ST} = 1\;|\;\mathbf{B} = 1 \cup \mathbf{C} = 1) = 0.60$;
+    \item examen negative for \textbf{No Disease}: $P(\mathbf{ST} = 0\;|\;\mathbf{B} = 0 \cap \mathbf{C} = 0) = 0.99$;
+\end{enumerate}
+\noindent Thus, the decision is made based on the patient's likelihood of having bronchitis.\\
+
+\noindent Given that the stethoscope test is negative, we need to update our inference. If the test shows a negative result and the patient has bronchitis, the likelihood of the patient having no disease becomes higher. This is because the negative stethoscope result would indicate that bronchitis or lung cancer is unlikely. Therefore:
+\begin{enumerate}[noitemsep]
+    \item examen negative for \textbf{No Disease}: $P(\mathbf{ST} = 0\;|\;\mathbf{B} = 0 \cap \mathbf{C} = 0) = 0.99$;
+    \item revised diagnosis;
+\end{enumerate}
+\noindent The most likely condition after a negative stethoscope test would be that the patient has no disease, assuming other symptoms and tests are not indicating otherwise.
+\end{document}
