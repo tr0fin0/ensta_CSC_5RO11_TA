@@ -1,0 +1,39 @@
+\documentclass[../CSC_5RO11_TA_TP6.tex]{subfiles}
+
+\begin{document}
+\section{Bayesian Network Model}
+\noindent The Bayesian network consists of variables and their probabilistic dependencies. Based on the information given, we can define the following variables:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{rr}
+        Probability & Complementary Probability\\
+        \hline
+        $P(\mathbf{VA} = 1) = 0.10$ & $P(\mathbf{VA} = 0) = 0.90$\\
+        $P(\mathbf{S} = 1) = 0.30$ & $P(\mathbf{S} = 0) = 0.70$\\
+        $P(\mathbf{VA} = 1\;|\;\mathbf{T} = 1) = 0.10$ & $P(\mathbf{VA} = 1\;|\;\mathbf{T} = 0) = 0.90
+        $\\
+        $P(\mathbf{VA} = 0\;|\;\mathbf{T} = 1) = 0.01$ & $P(\mathbf{VA} = 0\;|\;\mathbf{T} = 0) = 0.99$\\
+        $P(\mathbf{S} = 1\;|\;\mathbf{C} = 1) = 0.20$ & $P(\mathbf{S} = 1\;|\;\mathbf{C} = 0) = 0.80$\\
+        $P(\mathbf{S} = 0\;|\;\mathbf{C} = 1) = 0.02$ & $P(\mathbf{S} = 0\;|\;\mathbf{C} = 0) = 0.98$\\
+        $P(\mathbf{S} = 1\;|\;\mathbf{B} = 1) = 0.40$ & $P(\mathbf{S} = 1\;|\;\mathbf{B} = 0) = 0.60$\\
+        $P(\mathbf{S} = 0\;|\;\mathbf{B} = 1) = 0.80$ & $P(\mathbf{S} = 0\;|\;\mathbf{B} = 0) = 0.20$\\
+        $P(\mathbf{ST} = 1\;|\;\mathbf{B} = 1 \cup \mathbf{C} = 1) = 0.60$ & -\\
+        $P(\mathbf{ST} = 0\;|\;\mathbf{B} = 0 \cap \mathbf{C} = 0) = 0.99$ & -\\
+        $P(\mathbf{XR} = 1\;|\;\mathbf{T} = 1 \cup \mathbf{C} = 1) = 0.70$ & -\\
+        $P(\mathbf{XR} = 0\;|\;\mathbf{T} = 0 \cap \mathbf{C} = 0) = 0.98$ & -\\
+        \hline
+    \end{tabular}
+    \caption{Bayesian Network Model}
+    \label{}
+\end{table}
+\noindent With:
+\begin{enumerate}[noitemsep]
+    \item \textbf{B}: Bronchitis;
+    \item \textbf{C}: Cancer;
+    \item \textbf{S}: Smoke;
+    \item \textbf{ST}: Stethoscope;
+    \item \textbf{T}: Tuberculosis;
+    \item \textbf{VA}: Visit Asia;
+    \item \textbf{XR}: X-Ray;
+\end{enumerate}
+\end{document}
